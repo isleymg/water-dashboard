@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="img/watericon.png">
+
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+	<script src="js/d3.js"></script>
+	<!--Import D3.js library-->
+<!--   // <script data-require="d3@3.5.3" data-semver="3.5.3" src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.js"></script> -->
+
+
+  	
+	<title>Water Usage | UC Irvine</title>
+</head>
+<body>
+<header>
+	<!-- <h>UCI—Water Usage</h><br> -->
+	<img src="img/waterlogo.png">
+	
+</header>
+<div class="cd-tabs">
+	<nav>
+		<ul class="cd-tabs-navigation">
+			<li><a data-content="about" class="selected" href="#0">About </a></li>
+			<li><a data-content="arboretum" href="#0">Arboretum</a></li>
+			<li><a data-content="arc" href="#0">ARC</a></li>
+			<li><a data-content="campus" href="#0">Labs</a></li>
+			<li><a data-content="housing" href="#0">Housing</a></li>
+			<li><a data-content="other" href="#0">Other</a></li>
+		</ul> <!-- cd-tabs-navigation -->
+	</nav>
+
+	<ul class="cd-tabs-content">
+		<li data-content="about" class="selected">
+			<a>WHAT IS THIS?</a>
+			<p>This is a dashboard of water usage in University of California, Irvine buildings monitored by the Facilities Management Sustainability Team. Each tab depicts a graph of water use, color coded by year. This data is updated at the beginning of each month when water meter readings are inputted.</p>
+
+			<a>NEED HELP?</a>
+			<p>For questions, more information regarding water usage, or feedback about this site, please contact Isley Gao at jiayueg@uci.edu. To report a leak or other water issue, please email or send a photo to water@uci.edu.</p>
+
+		</li>
+
+		<li data-content="arboretum">
+			
+			<a>ARBORTEUM</a>
+
+			<p>The UCI Arboretum is a 12.5-acre botanic garden and research facility located approximately one mile from the University of California, Irvine. The Arboretum features plants and communities from the California Floristic Province and also has an extensive collection of South African species. <br> Main water consumption: irrigation for plants</p> 
+
+			<div style="position:relative;width=100%;height=0px;padding-bottom:56%;" class = "chart-iframe">
+				<iframe style="position:absolute; left=0;top=0;width=100%;height=100%" src="../arboretum.html" height="800px" width="800px;" scrolling="no" ></iframe>
+			</div>
+
+		</li>
+
+		<li data-content="arc">
+			<a>ANTEATER RECREATION CENTER</a>
+			<p>The Anteater Recreation Center (ARC) is an 89,000-square-foot (8,300-square-meter) indoor gym facility that is part of campus recreation at UCI, open to all UCI students, faculty and staff members, alumni, and other university affiliates. <br> Main water consumption: pool, showers, toilets, laundry, water fountains, irrigation for fields</p>
+
+			<iframe src="../arboretum.html" height="500px" width="100%" scrolling="no" ></iframe>
+
+		</li>
+
+		<li data-content="campus">
+			<a>CAMPUS BUILDINGS</a>
+			<p>These campus buildings from the School of Physical Sciences and Ayala School of Biological Sciences use a large amount of water for lab classrooms and research facilities. <br> Main water consumption: vivariums, laboratories</p>
+
+			<iframe src="../arboretum.html" height="500px" width="100%" scrolling="no" ></iframe>
+
+		</li>
+
+		<li data-content="housing">
+			<a>HOUSING</a>
+			<p>From freshman housing in Middle Earth and Mesa all the way to the off campus apartments, we track their monthly water usage.<br> Main water consumption: showers, toilets, water fountains, cooking</p>
+
+			<iframe src="../arboretum.html" height="500px" width="100%" scrolling="no" ></iframe>
+
+		</li>
+
+		<li data-content="other">
+			<a>OTHER</a>
+			<p>As we continue to monitor water use around campus, we will be adding new tabs for additional buildings. Check back later for new updates.</p>
+
+			<p>In the meantime, take a look at what we're doing on the Facilities Management team <a href="http://ucirecycles.wixsite.com/facilitiesmanagement">HERE</a>!</p>
+
+			<p> Alternatively, you can enjoy this gif of a happy elephant:</p>
+			<img src="img/elephant.gif" alt="gif">
+
+			<br><br>
+			<p>Last updated: Nov 11, 2016</p>
+
+		</li>
+	</ul> <!-- cd-tabs-content -->
+</div> <!-- cd-tabs -->
+
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<!-- <script src="js/arboretum.js"></script>    -->
+
+</body>
+</html>
